@@ -8,7 +8,7 @@ colorscheme desert
 """"""""""""""""""""""""""""""
 
 let g:winManagerWindowLayout = "BufExplorer,FileExplorer|TagList"
-
+nmap wm :WMToggle<cr>
 let g:winManagerWidth = 30
 set nocompatible " be iMproved
 set laststatus=2
@@ -26,11 +26,12 @@ Bundle 'OmniCppComplete'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'bash-support.vim'
 Bundle 'edc-support'
-Bundle 'Command-T'
+Bundle 'ctrlp.vim'
 filetype plugin indent on
 
 
 let g:defaultExplorer = 0
+let g:miniBufExplorerMoreThanOne=0
 
 nmap <C-W><C-F> :FirstExplorerWindow<cr>
 
@@ -66,7 +67,7 @@ set laststatus=2            "总是显示状态行
 set expandtab               "以下三个配置配合使用，设置tab和缩进空格数
 set shiftwidth=4
 set tabstop=4
-set cursorline              "为光标所在行加下划线
+"set cursorline              "为光标所在行加下划线
 "hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
 "set number                  "显示行号
 set autoread                "文件在Vim之外修改过，自动重新读入
@@ -75,7 +76,7 @@ set ignorecase              "检索时忽略大小写
 set fileencodings=uft-8,gbk "使用utf-8或gbk打开文件
 set hls                     "检索时高亮显示匹配项
 set helplang=cn             "帮助系统设置为中文
-set foldmethod=syntax       "代码折叠
+set foldmethod=manual       "代码折叠
 ""}}
 "powerline{
 	set guifont=PowerlineSymbols\ for\ Powerline
