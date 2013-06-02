@@ -37,7 +37,10 @@ nmap <C-W><C-F> :FirstExplorerWindow<cr>
 nmap <C-W><C-B> :BottomExplorerWindow<cr>
 
 nmap <silent> <c-m>  :WMToggle<cr>
-
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
 let Tlist_Show_One_File = 1            "?~M?~P~L?~W??~X?示?~Z个?~V~G件?~Z~Dtag?~L?~O??~X?示?~S?~I~M?~V~G件?~Z~D?~@~B
 
 let Tlist_Exit_OnlyWindow = 1          "?~B?~^~\ taglist ?~W?~O??~X??~\~@?~P~N?~@个?~W?~O??~L?~H~Y?~@~@?~G? vim?~@~B
@@ -65,7 +68,6 @@ set shiftwidth=4
 set tabstop=4
 set cursorline              "为光标所在行加下划线
 "hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
-hi CursorLine ctermbg=lightgray guibg=lightblue 
 "set number                  "显示行号
 set autoread                "文件在Vim之外修改过，自动重新读入
 
@@ -75,10 +77,12 @@ set hls                     "检索时高亮显示匹配项
 set helplang=cn             "帮助系统设置为中文
 set foldmethod=syntax       "代码折叠
 ""}}
-
 "powerline{
 	set guifont=PowerlineSymbols\ for\ Powerline
  	set nocompatible
 	set t_Co=256
 	let g:Powerline_symbols = 'fancy'
 "    }
+
+
+hi CursorLine ctermbg=darkgray guibg=lightblue
