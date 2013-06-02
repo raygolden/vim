@@ -35,6 +35,10 @@ nmap <C-W><C-B> :BottomExplorerWindow<cr>
 nmap <silent> <leader> wm :WMToggle<cr>
 
 nmap <silent> <leader> nd :NERDTreeToggle<cr>
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
 
 let Tlist_Show_One_File = 1            "?~M?~P~L?~W??~X?示?~Z个?~V~G件?~Z~Dtag?~L?~O??~X?示?~S?~I~M?~V~G件?~Z~D?~@~B
 
@@ -48,4 +52,7 @@ filetype plugin on
 "let g:pydiction_location = '/Users/ray/Downloads/pydiction-1.2/complete-dict'
 
 nmap <silent> <c-n> :NERDTreeToggle<CR>
-map <silent> <c-t> :TlistToggle<cr>
+nmap <silent> <c-t> :TlistToggle<cr>
+nmap wm :WMToggle<CR>
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
