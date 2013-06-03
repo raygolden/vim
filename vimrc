@@ -45,14 +45,6 @@ inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
-map <M-Right> <c-w> l 
-map <M-Left> <c-w> h 
-map <M-Up> <c-w> k 
-map <M-Down> <c-w> j 
-imap <M-Right> <ESC><c-w>l 
-imap <M-Left> <ESC><c-w>h 
-imap <M-Up> <ESC><c-w>k 
-imap <M-Down> <ESC><c-w>j 
 
 let Tlist_Show_One_File = 1            "?~M?~P~L?~W??~X?示?~Z个?~V~G件?~Z~Dtag?~L?~O??~X?示?~S?~I~M?~V~G件?~Z~D?~@~B
 
@@ -80,8 +72,8 @@ set expandtab               "以下三个配置配合使用，设置tab和缩进
 set shiftwidth=4
 set tabstop=4
 set cursorline              "为光标所在行加下划线
-"hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
-"set number                  "显示行号
+hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
+set number                  "显示行号
 set autoread                "文件在Vim之外修改过，自动重新读入
 
 set ignorecase              "检索时忽略大小写
@@ -90,6 +82,7 @@ set hls                     "检索时高亮显示匹配项
 set helplang=cn             "帮助系统设置为中文
 set foldmethod=manual       "代码折叠
 ""}}
+
 "powerline{
 	set guifont=PowerlineSymbols\ for\ Powerline
  	set nocompatible
