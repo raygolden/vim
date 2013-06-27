@@ -20,16 +20,14 @@ Bundle 'gmarik/vundle'
 Bundle 'The-NERD-tree'
 Bundle 'winmanager'
 Bundle 'taglist.vim'
-Bundle 'minibufexpl.vim'
-Bundle 'bufexplorer.zip'
+"Bundle 'minibufexpl.vim'
+"Bundle 'bufexplorer.zip'
 Bundle 'OmniCppComplete'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'bash-support.vim'
 Bundle 'edc-support'
 Bundle 'ctrlp.vim'
-Bundle 'AutoComplPop'
-"Bundle '
-
+Bundle 'snipMate'
 filetype plugin indent on
 
 
@@ -58,7 +56,7 @@ filetype plugin on
 "let g:pydiction_location = '/Users/ray/Downloads/pydiction-1.2/complete-dict'
 
 nmap <silent> <c-n> :NERDTreeToggle<CR>
-map <silent> <c-t> :TlistToggle<cr>
+map <silent> <c-m> :TlistToggle<cr>
 let g:BASH_AuthorName   = 'Ray Huang'
 let g:BASH_Email        = 'ray.huang@gree.net'
 let g:BASH_Company      = 'GII'
