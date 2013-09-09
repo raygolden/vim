@@ -2,7 +2,7 @@ syntax on
 colorscheme desert  
 "execute pathogen#infect()
 """""""""""""""""""""""""""""
-
+"install vundle by: git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 " winManage"r setting
 
 """"""""""""""""""""""""""""""
@@ -24,6 +24,7 @@ Bundle 'minibufexpl.vim'
 "Bundle 'bufexplorer.zip'
 Bundle 'OmniCppComplete'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+Bundle 'git://github.com/aperezdc/vim-template.git'
 Bundle 'bash-support.vim'
 Bundle 'edc-support'
 Bundle 'ctrlp.vim'
@@ -60,6 +61,9 @@ map <silent> <c-m> :TlistToggle<cr>
 let g:BASH_AuthorName   = 'Ray Huang'
 let g:BASH_Email        = 'ray.huang@gree.net'
 let g:BASH_Company      = 'GII'
+
+
+
 
 "common conf {{             通用配置
 set ai                      "自动缩进
