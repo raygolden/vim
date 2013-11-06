@@ -25,7 +25,8 @@ Bundle 'minibufexpl.vim'
 Bundle 'OmniCppComplete'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'git://github.com/aperezdc/vim-template.git'
-Bundle 'bash-support.vim'
+Bundle 'git@github.com:tpope/vim-fugitive.git'
+"Bundle 'bash-support.vim'
 Bundle 'edc-support'
 Bundle 'ctrlp.vim'
 Bundle 'snipMate'
@@ -93,7 +94,7 @@ set foldmethod=manual       "代码折叠
 "    }
 
 
-hi CursorLine ctermbg=darkgray guibg=lightblue
+"hi CursorLine ctermbg=darkgray guibg=lightblue
 hi Pmenu guibg=#444444
 hi PmenuSel ctermfg=7 ctermbg=4 guibg=#555555 guifg=#ffffff
 " Matched brackets
